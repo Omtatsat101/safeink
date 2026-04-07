@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeInk — Anonymous Letters That Reach People Who Can Help</title>
+<meta name="description" content="Write anonymous letters about injustice, abuse, or corruption. We protect your identity and route your truth to verified journalists and community leaders who can act.">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI',sans-serif;color:#e8e6e3;background:#0a0a0c;overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:720px;margin:0 auto;padding:0 24px}
+
+.nav{padding:20px 0;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-size:24px;font-weight:800;letter-spacing:-0.02em}
+.nav-brand span{color:#6c3caf}
+.nav-badge{font:700 11px/1 monospace;letter-spacing:0.1em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.1);color:#888}
+
+.hero{padding:100px 0 60px;text-align:center}
+.hero-icon{font-size:48px;margin-bottom:24px;opacity:0.6}
+.hero h1{font-size:clamp(32px,6vw,52px);font-weight:800;line-height:1.1;margin-bottom:20px;letter-spacing:-0.03em}
+.hero h1 em{font-style:normal;color:#6c3caf}
+.hero p{font-size:clamp(16px,2.5vw,20px);color:#888;max-width:540px;margin:0 auto 40px;line-height:1.7}
+.hero-cta{display:inline-block;padding:16px 36px;background:#6c3caf;color:#fff;border-radius:14px;font-size:17px;font-weight:700;transition:transform 0.2s,box-shadow 0.2s}
+.hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(108,60,175,0.4)}
+.hero-note{margin-top:16px;font-size:13px;color:#555}
+
+.section{padding:60px 0}
+.section-title{font-size:26px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em}
+.section-sub{color:#666;margin-bottom:32px}
+
+.steps{display:grid;gap:16px;counter-reset:step}
+.step{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:24px;counter-increment:step;position:relative;padding-left:64px}
+.step::before{content:counter(step);position:absolute;left:20px;top:24px;width:32px;height:32px;border-radius:50%;background:rgba(108,60,175,0.2);color:#6c3caf;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.step h3{font-size:17px;font-weight:700;margin-bottom:4px}
+.step p{font-size:14px;color:#888;line-height:1.5}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:22px}
+.card h3{font-size:16px;font-weight:700;margin-bottom:6px}
+.card p{font-size:14px;color:#888;line-height:1.5}
+.card-icon{font-size:24px;margin-bottom:10px}
+
+.privacy{background:rgba(108,60,175,0.06);border:1px solid rgba(108,60,175,0.15);border-radius:20px;padding:28px;margin-top:40px}
+.privacy h3{font-size:20px;font-weight:800;margin-bottom:16px;color:#6c3caf}
+.privacy-list{list-style:none;display:grid;gap:10px}
+.privacy-list li{font-size:15px;color:#aaa;padding-left:24px;position:relative}
+.privacy-list li::before{content:'✕';position:absolute;left:0;color:#f44336;font-weight:800}
+.privacy-list .yes::before{content:'✓';color:#4CAF50}
+
+.cta-bottom{text-align:center;padding:80px 0 40px}
+.cta-bottom h2{font-size:clamp(26px,5vw,38px);font-weight:800;margin-bottom:12px;letter-spacing:-0.02em}
+.cta-bottom p{color:#666;margin-bottom:28px}
+
+.footer{text-align:center;padding:24px 0 40px;font-size:12px;color:#444}
+.footer a{color:#6c3caf}
+
+@media(max-width:600px){.grid{grid-template-columns:1fr}.step{padding-left:56px}}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <nav class="nav">
+    <div class="nav-brand">Safe<span>Ink</span></div>
+    <span class="nav-badge">Decentralized &bull; E2E Encrypted</span>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-icon">&#128274;</div>
+    <h1>Your truth.<br><em>Protected.</em></h1>
+    <p>Write an anonymous letter about what you've witnessed — abuse, corruption, injustice. We encrypt your identity and route your truth to verified journalists and community leaders who can investigate, amplify, and act.</p>
+    <a href="#write" class="hero-cta">Write an Anonymous Letter</a>
+    <p class="hero-note">No account. No email. No tracking. Your browser encrypts before we ever see it.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">Four steps. Zero identity exposure.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Write your letter</h3>
+        <p>No login, no email, no account. Just open SafeInk and write what the world needs to know.</p>
+      </div>
+      <div class="step">
+        <h3>We scan for identifiers</h3>
+        <p>Our AI checks your letter for names, dates, and details that could identify you — and suggests redactions. All happens in your browser.</p>
+      </div>
+      <div class="step">
+        <h3>Your browser encrypts</h3>
+        <p>Your letter is encrypted with the recipient's public key before it ever leaves your device. We can't read it. Nobody can — except the journalist you chose.</p>
+      </div>
+      <div class="step">
+        <h3>Truth reaches the right people</h3>
+        <p>Your encrypted letter is published to IPFS (uncensorable) and routed to verified journalists, community leaders, or published for everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2 class="section-title">Who receives your letter</h2>
+    <p class="section-sub">Verified people with the power to act — and the commitment to protect you.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">&#128240;</div>
+        <h3>Investigative Journalists</h3>
+        <p>Reporters with source protection track records. They investigate and publish — you stay invisible.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127963;</div>
+        <h3>Community Leaders</h3>
+        <p>Elected officials, nonprofit directors, and organizers who can drive change in your community.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9878;&#65039;</div>
+        <h3>Legal Aid</h3>
+        <p>Pro bono lawyers and rights organizations who can advise or represent you — anonymously.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127760;</div>
+        <h3>The World</h3>
+        <p>Choose "publish for everyone" and your letter becomes a public record — uncensorable on IPFS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2 class="section-title">Categories</h2>
+    <p class="section-sub">Your letter gets routed to the right people based on what it's about.</p>
+    <div class="grid">
+      <div class="card"><h3>&#128188; Workplace</h3><p>Harassment, wage theft, unsafe conditions, discrimination</p></div>
+      <div class="card"><h3>&#127973; Healthcare</h3><p>Malpractice, denied care, billing fraud, patient safety</p></div>
+      <div class="card"><h3>&#127979; Education</h3><p>Bullying, institutional cover-ups, unsafe schools</p></div>
+      <div class="card"><h3>&#127968; Community</h3><p>Environmental hazards, housing injustice, local corruption</p></div>
+      <div class="card"><h3>&#127970; Corporate</h3><p>Fraud, safety violations, consumer deception</p></div>
+      <div class="card"><h3>&#127963; Government</h3><p>Waste, corruption, civil rights violations</p></div>
+    </div>
+  </section>
+
+  <div class="privacy">
+    <h3>What we never collect</h3>
+    <ul class="privacy-list">
+      <li>Your IP address (stripped at the edge)</li>
+      <li>Your browser fingerprint (no tracking scripts)</li>
+      <li>Your location (no geolocation)</li>
+      <li>Your name or email (no accounts for writers)</li>
+      <li>Cookies or session tokens (stateless)</li>
+    </ul>
+    <br>
+    <h3>What makes SafeInk different</h3>
+    <ul class="privacy-list">
+      <li class="yes">Decentralized — no server to shut down or subpoena</li>
+      <li class="yes">E2E encrypted — your browser encrypts before sending</li>
+      <li class="yes">IPFS storage — uncensorable, permanent</li>
+      <li class="yes">Open protocol — anyone can run a node</li>
+      <li class="yes">Tor compatible — works over Tor for maximum anonymity</li>
+    </ul>
+  </div>
+
+  <section class="section">
+    <h2 class="section-title">For journalists</h2>
+    <p class="section-sub">Register to receive anonymous letters matched to your beat.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Publish your public key</h3>
+        <p>Register your beats, regions, and credentials. Writers encrypt letters specifically for you.</p>
+      </div>
+      <div class="step">
+        <h3>Get matched letters</h3>
+        <p>Our AI matches incoming letters to your expertise. You only see what's relevant to your work.</p>
+      </div>
+      <div class="step">
+        <h3>Investigate safely</h3>
+        <p>Use our anonymous reply channel to ask follow-up questions. The writer responds without revealing their identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-bottom">
+    <h2>Silence protects the wrong people.</h2>
+    <p>Your truth deserves to reach someone who can act on it.</p>
+    <a href="#write" class="hero-cta">Write Your Letter</a>
+    <p class="hero-note" style="margin-top:16px">Open source. Decentralized. Free forever.</p>
+  </section>
+
+  <footer class="footer">
+    &copy; 2026 SafeInk &mdash; Open protocol. <a href="https://github.com/Omtatsat101/safeink">View source</a>.
+  </footer>
+</div>
+
+</body>
+</html>
