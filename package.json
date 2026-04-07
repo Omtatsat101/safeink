@@ -1,0 +1,21 @@
+{
+  "name": "safeink",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "node:start": "node lib/gateway.mjs"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
+    "ipfs-http-client": "^60.0.0",
+    "resend": "^4.0.0"
+  }
+}
